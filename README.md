@@ -66,33 +66,22 @@ Kết thúc đề tài, sinh viên có khả năng:
 ---
 
 ## 🚀 3. Hình ảnh các chức năng chính
-### 🖥️ Giao diện đăng nhập  
-Người chơi nhập **Tên** để tham gia trò chơi.  
-<p align="center">
-  <img src="docs/Login.png" alt="Login UI" width="400"/>
-</p>  
-**Hình ảnh 1: Giao diện đăng nhập**
+### 🖥️ 3.1 Giao diện đăng nhập 
+Người chơi nhập Tên đăng nhập (Username) để tham gia trò chơi.
+Sau khi đăng nhập, client sẽ kết nối tới server và chờ ghép cặp với người chơi khác.
 
 ---
 
-### 🎮 Giao diện trò chơi Oẳn Tù Tì  
-Người chơi có thể chọn **Kéo – Búa – Bao**.  
-<p align="center">
-  <img src="docs/GiaoDien.png" alt="Gameplay UI" width="500"/>
-</p>  
-**Hình ảnh 2: Giao diện trò chơi chính**
-
+### 🎮 3.2 Giao diện trò chơi Oẳn Tù Tì  
+Người chơi có thể chọn Kéo – Búa – Bao. 
+Sau khi chọn, lựa chọn được gửi đến server để xử lý kết quả.
+Kết quả trả về sẽ hiển thị ngay trên màn hình của người chơi.
 ---
 
-### 📊 Hiển thị kết quả  
-Kết quả thắng/thua/hòa được hiển thị sau mỗi lượt.  
-
-<p align="center">
-  <img src="docs/Result.png" alt="Result UI" width="500"/>
-</p>  
-**Hình ảnh 3: Hiển thị kết quả**
-
----
+### 📊 3.3 Hiển thị kết quả và lịch sử chơi
+Sau mỗi lượt, server gửi kết quả Thắng – Thua – Hòa cho từng client.
+Người chơi có thể theo dõi lịch sử kết quả ngay trong cửa sổ ứng dụng.
+Giúp người chơi nắm được tiến trình của cả phiên chơi.
 
 ## 📝 4. Các bước cài đặt
 🔹 Bước 1: Chuẩn bị môi trường
