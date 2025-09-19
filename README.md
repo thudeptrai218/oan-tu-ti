@@ -95,41 +95,43 @@ Kết quả thắng/thua/hòa được hiển thị sau mỗi lượt.
 ---
 
 ## 📝 4. Các bước cài đặt
-🔹 Bước 1: Chuẩn bị môi trường**  
-- Cài đặt **Java JDK 8+** → [Download](https://www.oracle.com/java/technologies/javase-downloads.html)  
-- Kiểm tra bằng:  
-  ```bash
-  java -version
-🔹 Bước 2: Clone dự án
+🔹 Bước 1: Chuẩn bị môi trường
+- Cài đặt Java JDK 8 hoặc mới hơn
+- Tải tại: https://www.oracle.com/java/technologies/javase-downloads.html
+- Sau khi cài đặt, mở Command Prompt / Terminal và kiểm tra:
+  - java -version
+- Nếu hiển thị java version "1.8.x" hoặc cao hơn nghĩa là cài đặt thành công.
+- Cài đặt một IDE để dễ chạy code (khuyến nghị IntelliJ IDEA, cũng có thể dùng Eclipse hoặc NetBeans).
 
-bash
-Sao chép mã
-git clone https://github.com/your-repo/oan-tu-ti.git
-cd oan-tu-ti
-🔹 Bước 3: Chạy Server
+🔹 Bước 2: Tải mã nguồn
+- Clone dự án từ GitHub:
+- git clone https://github.com/your-repo/OanTuTi-Game.git
+  - cd OanTuTi-Game
+- Nếu không dùng Git, bạn có thể bấm nút Download ZIP trên GitHub, sau đó giải nén.
 
-bash
-Sao chép mã
-javac RpsServer.java
-java RpsServer
-🔹 Bước 4: Chạy Client
+🔹 Bước 3: Mở dự án trong IDE
+- Vào File → Open Project trong IDE.
+- Chọn thư mục chứa source code (Client.java và Server.java).
+- Đảm bảo IDE nhận diện dự án là Java Project.
 
-bash
-Sao chép mã
-javac RpsClient.java
-java RpsClient
-🔹 Bước 5: Bắt đầu chơi
+🔹 Bước 4: Biên dịch và chạy Server
+- Mở file Server.java.
+- Nhấn Run để chạy server.
+- Server sẽ lắng nghe kết nối.
+- Nếu chạy thành công, IDE sẽ hiển thị log kiểu:
+  - Server started on
+  - Waiting for players...
 
-Client nhập tên → tham gia game.
+🔹 Bước 5: Biên dịch và chạy Client
+- Client nhập tên → tham gia game.
 
-Chọn Kéo – Búa – Bao.
+- Chọn Kéo – Búa – Bao.
 
-Server xử lý → gửi kết quả về cho client.
+- Server xử lý → gửi kết quả về cho client.
 
-📬 5. Liên hệ
-Họ và tên: Đoàn Tuấn Nam
-Lớp CNTT 1601
-Email:Dnam75603@gmail.com
-Lớp: CNTT 16-01
 
-Email:
+## 📬 5. Liên hệ
+- Họ và tên: Đoàn Tuấn Nam
+- Lớp: CNTT 16-01
+- SDT: 0862318469
+
