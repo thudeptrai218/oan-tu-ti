@@ -1,131 +1,135 @@
-# Oẳn Tù Tì Qua Mạng
+<h2 align="center">
+    <a href="https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin">
+    🎓 Faculty of Information Technology (DaiNam University)
+    </a>
+</h2>
+<h2 align="center">
+   TRÒ CHƠI OẲN TÙ TÌ QUA MẠNG (UDP)
+</h2>
+<div align="center">
+    <p align="center">
+        <img src="docs/aiotlab_logo.png" alt="AIoTLab Logo" width="170"/>
+        <img src="docs/fitdnu_logo.png" alt="FIT DNU Logo" width="180"/>
+        <img src="docs/dnu_logo.png" alt="DaiNam University Logo" width="200"/>
+    </p>
 
-Đây là một ứng dụng **trò chơi Oẳn Tù Tì (Rock-Paper-Scissors)** được lập trình bằng **Java**, chạy qua mạng sử dụng **giao thức UDP**.  
-Đề tài thuộc môn học **Lập Trình Mạng** – Trường Đại học Đại Nam.
+[![AIoTLab](https://img.shields.io/badge/AIoTLab-green?style=for-the-badge)](https://www.facebook.com/DNUAIoTLab)
+[![Faculty of Information Technology](https://img.shields.io/badge/Faculty%20of%20Information%20Technology-blue?style=for-the-badge)](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)
+[![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
 
----
+</div>
 
-##  Giới thiệu
-Trò chơi Oẳn Tù Tì (Kéo – Búa – Bao) vốn quen thuộc trong đời sống hằng ngày.  
-Trong đề tài này, chúng tôi xây dựng ứng dụng cho phép **nhiều người chơi tham gia qua mạng**, thay vì chơi trực tiếp.  
-Ứng dụng gồm **Client** và **Server**, trao đổi dữ liệu thông qua **giao thức UDP** để đạt tốc độ xử lý nhanh, giảm độ trễ, phù hợp với tính chất của trò chơi.
+## 📖 1. Giới thiệu
+Đề tài **“Trò chơi Oẳn Tù Tì qua mạng sử dụng giao thức UDP”** giúp sinh viên vận dụng kiến thức nền tảng về **lập trình mạng** để xây dựng một ứng dụng có tính tương tác trực tuyến dựa trên mô hình **Client/Server**.  
+Ứng dụng được phát triển thông qua cơ chế giao tiếp bằng **UDP Socket**, cho phép nhiều người chơi tham gia và thực hiện các lượt chơi theo thời gian thực.  
+Kết thúc đề tài, sinh viên có khả năng:
+- Thiết kế và triển khai một trò chơi mạng đơn giản.  
+- Nắm vững cách thức truyền nhận dữ liệu bằng UDP.  
+- Xử lý đồng bộ giữa các client thông qua server.  
+- Áp dụng nguyên lý **multithreading** trong quản lý nhiều kết nối.  
 
-Mặc dù UDP không đảm bảo tính toàn vẹn như TCP, nhưng ưu điểm của nó là phản hồi tức thì, đem lại trải nghiệm mượt mà.
-
----
-
-## Mục tiêu
-- Vận dụng kiến thức **lập trình mạng** với Java.  
-- Tạo một hệ thống **Client – Server** có khả năng kết nối, gửi/nhận dữ liệu.  
-- Rèn luyện kỹ năng thiết kế giao diện bằng **Java Swing**.  
-- Xây dựng ứng dụng có tính thực tiễn, phục vụ giải trí.  
-
----
-
-## Chức năng chính
-- Người chơi nhập tên, tham gia trò chơi với server.  
-- Lựa chọn **Kéo – Búa – Bao** từ giao diện.  
-- Gửi lựa chọn lên server qua UDP.  
-- Server xử lý kết quả và gửi phản hồi về client.  
-- Hiển thị kết quả thắng / thua / hòa.  
-- Hỗ trợ nhiều người chơi tham gia cùng lúc.  
-
----
-
-## Công nghệ sử dụng
-- **Ngôn ngữ**: Java  
-- **Giao thức mạng**: UDP  
-- **Giao diện người dùng**: Java Swing  
-- **Kỹ thuật hỗ trợ**:  
-  - **Multithreading**: xử lý nhiều client đồng thời  
-  - **Serialization**: đóng gói dữ liệu gửi qua UDP  
+### Các chức năng chính:
+- **Kết nối tới server**: đảm bảo giao tiếp giữa nhiều client trong cùng một phiên chơi.  
+- **Lựa chọn nước đi**: người chơi có thể chọn **Kéo – Búa – Bao**.  
+- **Xử lý và gửi kết quả**: server nhận dữ liệu từ các client, so sánh lựa chọn và gửi kết quả thắng/thua/hòa.  
+- **Quản lý nhiều người chơi**: hỗ trợ nhiều client tham gia cùng lúc qua đa luồng.  
+- **Hiển thị kết quả**: mỗi client sẽ thấy ngay kết quả lượt chơi.  
 
 ---
 
-## Cấu trúc thư mụcsrc/BTL/
-│── Client.java # Code phía client
-│── Server.java # Code phía server
-│── GUI.java # Giao diện Java Swing
-│── Message.java # Định nghĩa dữ liệu gửi/nhận
-docs/
-│── report.pdf # Báo cáo đề tài
-│── diagrams/ # Hình sơ đồ UML
-README.md # Giới thiệu dự án
-LICENSE # Giấy phép MIT
-.gitignore # File bỏ qua khi commit
+## 🔧 2. Ngôn ngữ lập trình và công nghệ sử dụng
+### Ngôn ngữ lập trình:
+[![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)  
+- Hỗ trợ mạnh mẽ cho **lập trình mạng (Networking API)**.  
+- Tích hợp sẵn thư viện làm việc với **UDP Socket, Thread, I/O**.  
+- Đa nền tảng, dễ triển khai.  
 
+### Công nghệ sử dụng:
+- [![UDP](https://img.shields.io/badge/UDP%20Socket-006400?style=flat-square&logo=socket.io&logoColor=white)]()  
+  - Sử dụng UDP để trao đổi dữ liệu Client ↔ Server.  
+  - Nhanh, gọn nhẹ, không cần kết nối lâu dài như TCP.  
+  - Phù hợp với trò chơi nhiều lượt đơn giản.  
+
+- [![Client/Server](https://img.shields.io/badge/Client%2FServer-4682B4?style=flat-square&logo=serverless&logoColor=white)]()  
+  - **Server**: quản lý kết nối, nhận/gửi dữ liệu, xử lý logic so sánh kết quả.  
+  - **Client**: gửi lựa chọn, nhận kết quả, hiển thị lên giao diện.  
+
+- [![Multithreading](https://img.shields.io/badge/Multithreading-8B0000?style=flat-square&logo=apache%20kafka&logoColor=white)]()  
+  - Server chạy đa luồng để quản lý nhiều client đồng thời.  
+
+- [![Java I/O](https://img.shields.io/badge/Java%20I%2FO-FF8C00?style=flat-square&logo=openjdk&logoColor=white)]()  
+  - Truyền nhận dữ liệu chuỗi ký tự giữa client và server.  
+
+- [![IDE](https://img.shields.io/badge/Eclipse%20%2F%20IntelliJ%20IDEA%20%2F%20NetBeans-800080?style=flat-square&logo=eclipseide&logoColor=white)]()  
+  - IDE hỗ trợ phát triển và debug chương trình.  
 
 ---
 
-## Hướng dẫn cài đặt & chạy chương trình
-### 1. Clone repository
-```bash
-git clone https://github.com/<tentaikhoan>/oan-tu-ti.git
+## 🚀 3. Hình ảnh các chức năng chính
+### 🖥️ Giao diện đăng nhập  
+Người chơi nhập **Tên** để tham gia trò chơi.  
+<p align="center">
+  <img src="docs/Login.png" alt="Login UI" width="400"/>
+</p>  
+**Hình ảnh 1: Giao diện đăng nhập**
+
+---
+
+### 🎮 Giao diện trò chơi Oẳn Tù Tì  
+Người chơi có thể chọn **Kéo – Búa – Bao**.  
+<p align="center">
+  <img src="docs/GiaoDien.png" alt="Gameplay UI" width="500"/>
+</p>  
+**Hình ảnh 2: Giao diện trò chơi chính**
+
+---
+
+### 📊 Hiển thị kết quả  
+Kết quả thắng/thua/hòa được hiển thị sau mỗi lượt.  
+
+<p align="center">
+  <img src="docs/Result.png" alt="Result UI" width="500"/>
+</p>  
+**Hình ảnh 3: Hiển thị kết quả**
+
+---
+
+## 📝 4. Các bước cài đặt
+🔹 **Bước 1: Chuẩn bị môi trường**  
+- Cài đặt **Java JDK 8+** → [Download](https://www.oracle.com/java/technologies/javase-downloads.html)  
+- Kiểm tra bằng:  
+  ```bash
+  java -version
+🔹 Bước 2: Clone dự án
+
+bash
+Sao chép mã
+git clone https://github.com/your-repo/oan-tu-ti.git
 cd oan-tu-ti
+🔹 Bước 3: Chạy Server
 
-2. Mở dự án
+bash
+Sao chép mã
+javac RpsServer.java
+java RpsServer
+🔹 Bước 4: Chạy Client
 
-Dùng IntelliJ IDEA, Eclipse hoặc NetBeans.
+bash
+Sao chép mã
+javac RpsClient.java
+java RpsClient
+🔹 Bước 5: Bắt đầu chơi
 
-Import thư mục src/BTL.
+Client nhập tên → tham gia game.
 
-3. Chạy server
+Chọn Kéo – Búa – Bao.
 
-Mở file Server.java và chạy trước.
+Server xử lý → gửi kết quả về cho client.
 
-Server sẽ lắng nghe port UDP (ví dụ: 5000).
+📬 5. Liên hệ
+Họ và tên: Đoàn Tuấn Nam
+Lớp CNTT 1601
+Email:Dnam75603@gmail.com
+Lớp: CNTT 16-01
 
-4. Chạy client
-
-Mở file Client.java và chạy.
-
-Nhập địa chỉ IP + port của server.
-
-Bấm chọn Kéo – Búa – Bao trên giao diện Swing.
-
-5. Xem kết quả
-
-Client sẽ hiển thị kết quả ngay lập tức (thắng / thua / hòa).📸 Minh họa giao diện
-
- Thêm hình ảnh từ thư mục docs/diagrams để README đẹp hơn:
-
-Giao diện Client
-
-Màn hình Server Console
-
-Sơ đồ kiến trúc hệ thống
-
-Class Diagram
-
-(Nếu đã vẽ bằng draw.io / StarUML, có thể chèn link ảnh tại đây)
-
- Sơ đồ UML
-
-Component Diagram: mô tả các thành phần Client – Server.
-
-Sequence Diagram: luồng xử lý khi người chơi gửi lựa chọn.
-
-Class Diagram: mô hình hóa các lớp Java (Client, Server, Message, GUI).
-
- Tác giả
-
-Sinh viên thực hiện: Đoàn Tuấn Nam – CNTT 16-01
-
-MSSV: 1671020209
-
-GVHD: Thầy Lê Tuấn Anh, Thầy Trần Vũ Đại
-
- Giấy phép
-
-Dự án được phát hành theo MIT License.
-Bạn có thể thoải mái sử dụng, chỉnh sửa và phát triển thêm.
-
- Hướng phát triển
-
-Nâng cấp từ UDP sang TCP để tăng độ tin cậy.
-
-Thêm tính năng xếp hạng và thống kê kết quả người chơi.
-
-Tích hợp chat trực tuyến giữa các client.
-
-Triển khai ứng dụng trên nền web hoặc mobile.
+Email:
