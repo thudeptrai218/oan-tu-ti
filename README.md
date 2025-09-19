@@ -95,7 +95,7 @@ Kết quả thắng/thua/hòa được hiển thị sau mỗi lượt.
 ---
 
 ## 📝 4. Các bước cài đặt
-🔹 **Bước 1: Chuẩn bị môi trường**  
+🔹 Bước 1: Chuẩn bị môi trường**  
 - Cài đặt **Java JDK 8+** → [Download](https://www.oracle.com/java/technologies/javase-downloads.html)  
 - Kiểm tra bằng:  
   ```bash
