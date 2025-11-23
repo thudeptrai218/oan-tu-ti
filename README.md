@@ -69,7 +69,7 @@ Kết thúc đề tài, sinh viên có khả năng:
 ### 🖥️ Giao diện đăng nhập  
 Người chơi nhập **Username** để tham gia trò chơi.  
 <p align="center">
-  <img src="docs/Login.png" alt="Login UI" width="400"/>
+  <img src="docs/Login.PNG" alt="Login UI" width="400"/>
 </p>  
 **Hình ảnh 1: Giao diện đăng nhập**
 
@@ -78,7 +78,7 @@ Người chơi nhập **Username** để tham gia trò chơi.
 ### 🎮 Giao diện trò chơi Oẳn Tù Tì  
 Người chơi có thể chọn **Kéo – Búa – Bao**.  
 <p align="center">
-  <img src="docs/GiaoDien.png" alt="Gameplay UI" width="500"/>
+  <img src="docs/GiaoDien.PNG" alt="Gameplay UI" width="500"/>
 </p>  
 **Hình ảnh 2: Giao diện trò chơi chính**
 
@@ -88,7 +88,7 @@ Người chơi có thể chọn **Kéo – Búa – Bao**.
 Kết quả thắng/thua/hòa được hiển thị ngay sau mỗi lượt. Người chơi cũng có thể xem lại lịch sử kết quả.  
 
 <p align="center">
-  <img src="" alt="Result UI" width="500"/>
+  <img src="lichsu.PNG" alt="Result UI" width="500"/>
 </p>  
 **Hình ảnh 3: Hiển thị kết quả và lịch sử chơi**
 
