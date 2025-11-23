@@ -68,30 +68,32 @@ Kết thúc đề tài, sinh viên có khả năng:
 ## 🚀 3. Hình ảnh các chức năng chính
 ###  Giao diện Đăng nhập
 <p align="center">
-  <img src="docs/login.PNG" alt="Giao diện Đăng nhập" width="450" />
+  <img src="docs/login.PNG" alt="Giao diện Đăng nhập" width="550" />
   <br>
  <em> Hình 1: Giao diện Đăng nhập </em>
 </p>
 
----
-
-### 🎮 Giao diện trò chơi Oẳn Tù Tì  
-Người chơi có thể chọn **Kéo – Búa – Bao**.  
+###  Giao diện Menu
 <p align="center">
-  <img src="docs/GiaoDien.PNG" alt="Gameplay UI" width="500"/>
-</p>  
-**Hình ảnh 2: Giao diện trò chơi chính**
+  <img src="docs/Menu.PNG" alt="Giao diện Menu" width="550" />
+  <br>
+ <em> Hình 2: Giao diện Menu </em>
+</p>
 
----
-
-### 📊 Hiển thị kết quả và lịch sử chơi  
-Kết quả thắng/thua/hòa được hiển thị ngay sau mỗi lượt. Người chơi cũng có thể xem lại lịch sử kết quả.  
-
+###  Giao diện Trò chơi
 <p align="center">
-  <img src="lichsu.PNG" alt="Result UI" width="500"/>
-</p>  
-**Hình ảnh 3: Hiển thị kết quả và lịch sử chơi**
+  <img src="docs/Giaodien.PNG" alt="Giao diện trò chơi" width="550" />
+  <br>
+ <em> Hình 3: Giao diện trò chơi </em>
+</p>
 
+
+###  Giao diện Lịch Sử Đấu
+<p align="center">
+  <img src="docs/lichsu.PNG" alt="Giao diện lịch sử" width="550" />
+  <br>
+ <em> Hình 4: Giao diện lịch sử đấu </em>
+</p>
 
 ## 📝 4. Các bước cài đặt
 🔹 Bước 1: Chuẩn bị môi trường
