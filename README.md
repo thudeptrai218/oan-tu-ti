@@ -66,12 +66,12 @@ Kết thúc đề tài, sinh viên có khả năng:
 ---
 
 ## 🚀 3. Hình ảnh các chức năng chính
-### 🖥️ Giao diện đăng nhập  
-Người chơi nhập **Username** để tham gia trò chơi.  
+###  Giao diện Đăng nhập
 <p align="center">
-  <img src="docs/Login.PNG" alt="Login UI" width="400"/>
-</p>  
-**Hình ảnh 1: Giao diện đăng nhập**
+  <img src="docs/login.PNG" alt="Giao diện Đăng nhập" width="450" />
+  <br>
+ <em> Hình 1: Giao diện Đăng nhập </em>
+</p>
 
 ---
 
